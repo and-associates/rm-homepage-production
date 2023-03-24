@@ -41,6 +41,15 @@
                 transform: translate(-50%) translateY(-50%);
             }
 
+            .about {
+                display: flex;
+                text-align: left;
+            }
+
+            ::selection {
+                color: #eaeaea;
+            }
+
             @font-face {
                 font-family:"Antique Legacy";
                 src: url(assets/AntiqueLegacy-Book.woff2);
@@ -53,10 +62,12 @@
     <body>
                 <h1>Ryan Maeland</h1>
                 <a href="mailto:office@andassociates.studio" target="_blank"><h1>Ryan Maeland</h1></a>
-                <h2>
-                    I am an art director and creative consultant operating across the worlds of apparel, beauty and skincare, music, health and wellness, and more. In the present moment, I’m a co-founding partner of AND ASSOCIATES STUDIO, and Brand Experience & Design Lead at skincare company, Subsystematics.
-                </h2>
-        </div>
+
+                <div class="about">
+                    <h2>
+                        I am an art director and creative consultant operating across the worlds of apparel, beauty and skincare, music, health and wellness, and more. In the present moment, I’m a co-founding partner of AND ASSOCIATES STUDIO, and Brand Experience & Design Lead at skincare company, Subsystematics.
+                    </h2>
+                </div>
         <script>
             const body = document.body,
                 scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
