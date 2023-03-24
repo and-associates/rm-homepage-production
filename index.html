@@ -1,114 +1,111 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <link rel="stylesheet" type="text/css" href="main.css" />
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name "viewport" content="width=device-width", initial-scale="1.0" />
-        <title>
-            Ryan Maeland
-        </title>
-        <link rel="stylesheet" href="main.css"
-        <script src="js/gsap.min.js"></script>
-        <script src="js/main.js"></script>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Smooth Scroll</title>
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
-        <div id="gallery"></div>
+        <div class="smooth-scroll-wrapper">
+            <div class="content">
+                <h1>
+                    :no time to explain
+                </h1>
+                <div class="img"></div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem animi ipsam itaque
+                    doloribus aliquid, veniam minus laborum doloremque quos ullam. Quas harum iure
+                    optio dolorem ea recusandae blanditiis ipsum praesentium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi
+                    tenetur sapiente dolor deleniti. Fuga labore pariatur esse. Repudiandae,
+                    voluptates nisi soluta architecto inventore hic. Omnis eos expedita sed
+                    architecto illum mollitia! Totam aperiam vel consequuntur a, ipsum sapiente sit
+                    laborum exercitationem distinctio labore praesentium veniam accusamus, voluptate
+                    ratione suscipit!
+                </p>
+                <div class="img"></div>
+
+                <h1>:more than pretty screens</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto suscipit
+                    ducimus nostrum, aut minus eius impedit vero numquam est optio reprehenderit
+                    itaque quis eligendi quasi repellendus obcaecati neque dolor ipsam nulla
+                    praesentium voluptatum. Est assumenda ea voluptatibus! Eaque quo ducimus, unde
+                    maxime enim nesciunt debitis voluptatem fuga obcaecati? Aperiam?
+                </p>
+
+                <div class="img"></div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea nihil quibusdam
+                    repudiandae praesentium quisquam eos, repellendus fugiat dolore! Neque.
+                </p>
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <h1>
+                    :no time to explain
+                </h1>
+                <div class="img"></div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem animi ipsam itaque
+                    doloribus aliquid, veniam minus laborum doloremque quos ullam. Quas harum iure
+                    optio dolorem ea recusandae blanditiis ipsum praesentium.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam excepturi
+                    tenetur sapiente dolor deleniti. Fuga labore pariatur esse. Repudiandae,
+                    voluptates nisi soluta architecto inventore hic. Omnis eos expedita sed
+                    architecto illum mollitia! Totam aperiam vel consequuntur a, ipsum sapiente sit
+                    laborum exercitationem distinctio labore praesentium veniam accusamus, voluptate
+                    ratione suscipit!
+                </p>
+                <div class="img"></div>
+
+                <h1>:more than pretty screens</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos architecto suscipit
+                    ducimus nostrum, aut minus eius impedit vero numquam est optio reprehenderit
+                    itaque quis eligendi quasi repellendus obcaecati neque dolor ipsam nulla
+                    praesentium voluptatum. Est assumenda ea voluptatibus! Eaque quo ducimus, unde
+                    maxime enim nesciunt debitis voluptatem fuga obcaecati? Aperiam?
+                </p>
+
+                <div class="img"></div>
+
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Est ea nihil quibusdam
+                    repudiandae praesentium quisquam eos, repellendus fugiat dolore! Neque.
+                </p>
+            </div>
+        </div>
+        <script>
+            const body = document.body,
+                scrollWrap = document.getElementsByClassName("smooth-scroll-wrapper")[0],
+                height = scrollWrap.getBoundingClientRect().height - 1,
+                speed = 0.04;
+
+            var offset = 0;
+
+            body.style.height = Math.floor(height) + "px";
+
+            function smoothScroll() {
+                offset += (window.pageYOffset - offset) * speed;
+
+                var scroll = "translateY(-" + offset + "px) translateZ(0)";
+                scrollWrap.style.transform = scroll;
+
+                callScroll = requestAnimationFrame(smoothScroll);
+            }
+
+            smoothScroll();
+        </script>
     </body>
-    <script>
-
-        const gallery = document.getElementById("gallery");
-
-        window.onmousemove = (e) => {
-            const mouseX = e.clientX,
-            mouseY = e.client;
-        }
-
-        const xDecimal = mouseX / window.innerWidth,
-        yDecimal = mouseY / window.innerHeight;
-
-        const maxX = gallery.offsetWidth - window.innerWidth,
-        maxY = gallery.offsetHeight - window.innerHeight
-
-        const panX = maxX - xDecimal * -1.
-        panY = maxY - yDecimal * -1;
-
-        galley.animate({
-            transform: 'translate(${panX})px, ${panY}px)',
-        }),
-        {
-            duration: 4000,
-            fill: "forwards",
-            easing: "ease"
-        }
-
-        const radius = 300,
-        blocks = document.querySelectorAll(".block"),
-        radius2 = radius * radius,
-        container = document.querySelector("#gallery");
-
-        blocks.forEach((block) => {
-            let b = block.getBoundingClientRect9();
-            (block.cx - b.left + b.width / 2 + window.pageXOffset),
-            (block.cy = b.top + b.height / 2 + window.pageYOffset);
-
-            block.tween = gsap.to(block, { 
-                scale: maxScale,
-                ease: "power1.in",
-                paused: true,
-            })
-            .progress(1)
-            .progress(0);
-
-            document.addEventListener("mousemove", e) => {
-                let i = blocks.length,
-                dx,
-                dy,
-                block;
-
-                while(i--) {
-                    block = blocks[i];
-                    dx = (block.cx - e.pageX)** 2;
-                    dy = (block.cy - e.pageY) ** 2;
-                    block.tween.progress(1 - (dx + dy) / radius2);
-                }
-            })
-    </script>
 </html>
