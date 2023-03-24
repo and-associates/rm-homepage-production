@@ -1,6 +1,50 @@
 <style>
 
-/* UTILITIES */
+/*
+
+	U1 SETTINGS
+	U2 COLOR
+	U3 TYPOGRAPHY
+	U4 LAYOUTS
+
+*/
+
+/* FONT FILES - START */
+
+/* U1 SETTINGS: START */
+
+h1,
+h2 {
+    font-family: 'Antique Legacy Book', Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+    letter-spacing: -0.05em;
+    line-height: 1.5rem;
+}
+
+h3,
+h4,
+h5,
+h6, {
+    font-family: 'Antique Legacy', Helvetica, Arial, sans-serif !important;
+}
+
+
+p {
+    font-family: 'Antique Legacy', Helvetica, Arial, sans-serif !important;
+}
+
+a {
+    font-family: 'Antique Legacy', Helvetica, Arial, sans-serif !important;
+}
+
+.logo {
+    font-family: 'Antique Legacy', Helvetica, Arial, sans-serif !important;
+    font-size: 1rem;
+}
+
+/* U1 SETTINGS: END */
+
+
 
 html {
     box-sizing: border-box
