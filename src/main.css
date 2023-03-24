@@ -94,10 +94,10 @@ html {
 }
 
 body {
-    color: #1A1A1A;
-    color: var(--text-black,#1A1A1A);
-    background-color: #EEEEEE;
-    background-color: var(--bg-color,#EEEEEE);
+    color: #FFFFFF;
+    color: var(--text-white,#FFFFFF);
+    background-color: #1A1A1A;
+    background-color: var(- -bg-color,#1A1A1A);
     font-family: "Antique Legacy",Helvetica, sans-serif;
     font-size: -0.75rem;
     line-height: 1.3;
