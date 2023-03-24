@@ -1,5 +1,7 @@
 /* U1 SETTINGS: START */
 
+/* U1 SETTINGS: END */
+
 html {
     overflow-x: hidden;
 }
@@ -8,9 +10,9 @@ html,
 body {
     margin: 0;
     padding: 0;
-    background: #EEEEEE;
-    color: #1a1a1a;
-    font-family: "Antique Legacy";
+    background: #1a1a1a;
+    color: #eee;
+    font-family: "Antique Legacy", Helvetica,  Arial, sans-serif !important;
 }
 
 body {
@@ -32,14 +34,16 @@ body {
 }
 
 h1 {
-    font-size: 80px;
+    font-family: "Antique Legacy", Helvetica, Arial, sans-serif !important;
+    font-size: 24px;
+    letter-spacing: -0.05em;
 }
 
 p {
-    font-size: 24px;
-    line-height: 40px;
-    font-weight: 200;
-    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 400;
+    color: #EEEEEE;
 }
 
 .img {
