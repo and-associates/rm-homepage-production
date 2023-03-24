@@ -1,3 +1,5 @@
+/* U1 SETTINGS: START */
+
 body {
     font-family: "Antique Legacy", Helvetica, Arial, sans-serif !important;
     background: #FFF;
@@ -6,6 +8,10 @@ body {
     overflow: hidden;
     cursor: crosshair;
 }
+
+/* U1 SETTINGS: END */
+
+/* U2 CONTENT: START */
 
 #gallery {
     height: 75vmax;
@@ -65,6 +71,9 @@ body {
     background-size: cover;
 }
 
+/* U2 CONTENT: END */
+
+/* FILES */
 
 @font-face {
     font-family:"Antique Legacy";
